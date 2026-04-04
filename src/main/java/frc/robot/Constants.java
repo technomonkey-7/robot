@@ -142,10 +142,9 @@ public final class Constants {
     public static final double WheelCircumference = WheelDiameter * Math.PI;
 
     public static final double PhysicalMaxSpeed = Units.feetToMeters(12.5); //12.5 ft/s
-    // Sizin için teleop testlerindeki maksimum Sürüş ve Dönüş hızlarını %45 oranında düşürdüm. 
-    // Ustalaştıkça veya yarışmaya yaklaşırken bu 7.0 rakamını yavaşça orijinali olan 12.5'a çekebilirsiniz.
-    public static final double LinearMaxSpeed = Units.feetToMeters(7.0);   
-    public static final double AngularMaxSpeed = Units.feetToMeters(7.0);
+    // Playofflar için hız sınırını KİLİDİ AÇTIM! Full potansiyel (12.5 ft/s)
+    public static final double LinearMaxSpeed = Units.feetToMeters(12.5);   
+    public static final double AngularMaxSpeed = Units.feetToMeters(12.5);
 
     public static final double DriveEncoderPositionConversionFactor = WheelCircumference/DriveGearRatio; //motor 1 şaft turu = 3.92 cm
     public static final double DriveEncoderVelocityConversionFactor = DriveEncoderPositionConversionFactor/60;
